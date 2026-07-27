@@ -127,10 +127,11 @@ class VideoSourceDescriptor {
     }
 }
 class UnMuxVideoSourceDescriptor {
-    constructor(videoSourcesOrObj, audioSources) {
+    constructor(videoSourcesOrObj, audioSources, videoHasAudio) {
         videoSourcesOrObj = videoSourcesOrObj ?? {};
         this.plugin_type = "UnMuxVideoSourceDescriptor";
         this.isUnMuxed = true;
+        this.videoHasAudio = !!videoHasAudio;
 
         if(videoSourcesOrObj.constructor === Array) {
             this.videoSources = videoSourcesOrObj;
