@@ -8,7 +8,7 @@
 	"repositoryUrl": "https://gitlab.futo.org/videostreaming/plugins/youtube",
 	"scriptUrl": "./YoutubeScript.js",
 
-	"version": 353,
+	"version": 354,
 	"iconUrl": "./youtube.png",
 	"id": "35ae969a-a7db-11ed-afa1-0242ac120002",
 
@@ -449,6 +449,9 @@
 
 
 	"changelog": {
+                "354": [
+                        "Feature: Audio-only download option"
+                ],
                 "353": [
                         "Feature: Native UMP"
                 ],
